@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Login </title>     
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">
+          <div align="center" class="border">
+            </br></br>
+            <h2 class="word">
+                <form action="{{ url_for('show') }}" method="post">
+                  <div class="msg">
+                    <p>UserName:{{username}}</p>
+                    <p>Email:{{email}}</p>
+                    <p>Phone Number:{{ph}}</p>
+                  </div>
+                 
+                  <div>UserNamee</div>
+                    <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br></br>
+                    <input type="submit" class="btn" value="Sign In"></br></br>
+                </form>
+            </h2>
+            <p class="bottom">Don't have an account?  <a class="bottom" href="{{url_for('register')}}"> Sign Up here</a></p>
+          </div>
+        </div>
+    </body>
+</html>
