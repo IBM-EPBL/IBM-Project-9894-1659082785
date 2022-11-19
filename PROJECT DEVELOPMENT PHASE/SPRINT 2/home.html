@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+<style>
+    body {
+      background-image: <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    }
+
+
+    </style><br><br>
+<div class="jumbotron mt-4">
+    <h7 class="display-4">Inventory Managment System for Retailers</h7><br><br>
+    {% if session.logged_in == NULL %}
+        <center><a href="/register" class="btn btn-primary btn-lg">Register</a>
+        <a href="/login" class="btn btn-success btn-lg">Login</a></center>
+    {% endif %}<br>
+</div>
+{% endblock %}
