@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 3</title>
+  <style>
+    *{
+      margin-top: 0px;
+      padding: 0;
+    }
+    .bg-img{
+      background-image: url(./Image/bgimg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 90vh;
+    }
+  </style>
+  </head>
+  <body>
+    <center>
+      <h2 style="color: black">INVENTORY MANAGEMENT SYSTEM FOR RETAILERS</h2>
+    </center>
+    <div class="bg-img">
+
+    </div>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "84a038bf-ee4f-4a7b-ba08-2519b8dd09fa", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "b755cf60-bcc3-4f62-804e-1b82729ec49f", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+</html>
